@@ -484,6 +484,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         grid-template-rows: repeat(12, 1fr); /* Stacking vertically */
         padding: 10px;
     }
+    .slider {
+        display: none;
+    }
 
     .item-1 {
         grid-column: 1/2;
