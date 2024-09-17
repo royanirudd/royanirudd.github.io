@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="1.2.1">
+    <title>Anirudh Roy - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesCLI.css">
+</head>
+<body class="dark-mode">
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <div id="terminal">
+        <div id="output"></div>
+        <div id="input-line">
+            <span id="prompt">
+                <span class="prompt-name">anirudh</span><span class="prompt-at">@</span><span class="prompt-location">portfolio</span><span class="prompt-colon">:</span><span class="prompt-path">$</span><span class="prompt-tilde"> ~</span>
+            </span>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+    <script src="scriptCLI.js"></script>
+</body>
+</html>
