@@ -577,6 +577,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         min-width: 300px; 
         min-height: 50px;
     }
+    .item-8 .hideItem8 {
+        display: none;
+    }
 
     .item-9 {
         display: none;
