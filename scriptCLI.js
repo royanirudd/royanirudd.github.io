@@ -75,22 +75,20 @@ software development, finance/business analysis or data analytics.`);
         addToOutput('My Projects:');
         addToOutput(`> This Terminal Profile Website`);
         addToOutput(`   <a href="https://github.com/royanirudd/PortfolioTerminalWebsite" target="_blank" class="project-link">GitHub</a>`);
-        addToOutput('> Mock Travel Booking Website');
-        addToOutput(`   <a href="https://github.com/royanirudd/travelSite" target="_blank" class="project-link">GitHub</a>`);
-        addToOutput('> Collection of DataScience projects');
-        addToOutput(`   <a href="
-https://github.com/royanirudd/DataScienceProjects" target="_blank">GitHub</a>`);
+        addToOutput('> Clipboard history plugin for NeoVIM');
+        addToOutput(`   <a href="https://github.com/royanirudd/clipboard-history.nvim" target="_blank" class="project-link">GitHub</a>`);
+        addToOutput('> Reddit TTS Bot');
+        addToOutput(`   <a href="https://github.com/royanirudd/RedditTTSBot" target="_blank">GitHub</a>`);
         addToOutput(`> Idle game on Godot`);
-        addToOutput(`   <a href="
-https://github.com/royanirudd/IdleGame" target="_blank">GitHub</a>`);
-        addToOutput(`> Contact Management CRUD application`);
-        addToOutput(`   <a href="https://github.com/royanirudd/Task2CRUD" target="_blank">GitHub</a>`);
+        addToOutput(`   <a href="https://github.com/royanirudd/IdleGame" target="_blank">GitHub</a>`);
+        addToOutput(`> Wikipedia Racing Extension`);
+        addToOutput(`   <a href="https://github.com/royanirudd/wikipediaRacingExtension" target="_blank">GitHub</a>`);
 
     },
     skills: () => {
         addToOutput('Technical Skills:');
-        addToOutput('- Programming Languages: JavaScript, Python, Java, C');
-        addToOutput('- Web Technologies: HTML, CSS, React, Node.js');
+        addToOutput('- Programming Languages: JavaScript, Python, Java, C, C#, Lua');
+        addToOutput('- Web Technologies: HTML, CSS, React, Node.js, ASP.NET, Blazor');
         addToOutput('- Databases: MySQL, MongoDB, MS SQL Server');
         addToOutput('- Tools: Git, Docker, AWS');
     },
