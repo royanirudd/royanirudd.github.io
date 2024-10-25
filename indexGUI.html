@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh Roy Portfolio</title>
+    <link rel="stylesheet" href="stylesGUI.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anirudh Roy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech-stack">Tools</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="indexCLI.html">CLI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anirudh Roy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#tech-stack" onclick="toggleMenu()">Tools</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="indexCLI.html" onclick="toggleMenu()">CLI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-container">
+            <div class="section_pic-container-1">
+                <img src="./assets/profile.png" alt="Anirudh Roy">
+            </div>
+            <div class="section_text-container">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Anirudh Roy</h1>
+                <p class="section_text_p2">I'm a Software Engineer and Web Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+                </div>
+                <div id="socials-container">
+                    <img class="icon" src="./assets/github.png" alt="Github"
+                        onclick="window.open('https://github.com/royanirudd')">
+                    <img class="icon" src="./assets/linkedin.png" alt="LinkedIn"
+                        onclick="window.open('https://www.linkedin.com/in/anirudh-roy1/')">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container-2">
+                <img class="about-pic" src="./assets/about.png" alt="Anirudh Roy">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="./assets/experience.png" alt="Experience icon">
+                        <h3>Experience</h3>
+                        <p>1 year of experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img class="icon" src="./assets/education.png" alt="Education icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Mathematics, Computer Science and Statistics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Hi, I'm Anirudh Roy, a recent graduate with a degree in Maths, Statistics, and Computer Science,
+                        based in Pune, MH, India.
+
+                        I'm deeply passionate about game design and video games, which fuels my enthusiasm for creating
+                        engaging and interactive experiences. Outside of tech, I enjoy playing basketball and staying
+                        active.
+
+                        While I have a set of preferred tools, I'm always open to exploring the best option for each
+                        project, ensuring that the chosen solution is the most effective one. My primary goal is to find
+                        the right solution for each challenge I encounter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <p class="section_text_p1">My Tech Stack</p>
+        <h1 class="title">Tech Stack</h1>
+        <div class="tech-stack-container">
+            <!-- Programming Languages Section -->
+            <div class="tech-category">
+                <h3>Programming Languages</h3>
+                <div class="tech-icons">
+                    <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+                            alt="C" />
+                    </a>
+                    <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                            alt="C#" />
+                    </a>
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                            alt="CSS3" />
+                    </a>
+                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                            alt="HTML5" />
+                    </a>
+                    <a href="https://www.java.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                            alt="Java" />
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                    </a>
+                    <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                            alt="Python" />
+                    </a>
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                            alt="TypeScript" />
+                    </a>
+                    <a href="https://www.lua.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg"
+                            alt="Lua" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Web Tools Section -->
+            <div class="tech-category">
+                <h3>Web Tools</h3>
+                <div class="tech-icons">
+                    <a href="https://angular.io" target="_blank" rel="noreferrer">
+                        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" />
+                    </a>
+                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                            alt="Bootstrap" />
+                    </a>
+                    <a href="https://pugjs.org" target="_blank" rel="noreferrer">
+                        <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="Pug" />
+                    </a>
+                    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                            alt="Node.js" />
+                    </a>
+                    <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank" rel="noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/ASP.NET_Logo.png" alt="ASP.NET" />
+                    </a>
+                    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blazor/blazor-original.svg"
+                            alt="Blazor" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Backend Section -->
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-icons">
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                            alt="MongoDB" />
+                    </a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                            alt="MySQL" />
+                    </a>
+                    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                            alt="PostgreSQL" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Science Section -->
+            <div class="tech-category">
+                <h3>Data Science</h3>
+                <div class="tech-icons">
+                    <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+                            alt="Scikit Learn" />
+                    </a>
+                    <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Section -->
+            <div class="tech-category">
+                <h3>Tools</h3>
+                <div class="tech-icons">
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" />
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            alt="GitHub" />
+                    </a>
+                    <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                            alt="Linux" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-article">
+                <div class="project-image">
+                    <img src="./assets/yank.PNG" alt="Project 1" width="100%" />
+                </div>
+                <div class="project-description">
+                    <h3>Neovim Plugin for Clipboard History</h3>
+                    <p>A Neovim plugin that maintains a history of yanked text and allows for pasting from history. </p>
+                    <button class="btn btn-color-1"
+                        onclick="window.open('https://github.com/royanirudd/clipboard-history.nvim')">View on
+                        GitHub</button>
+                </div>
+            </div>
+            <div class="project-article">
+                <div class="project-image">
+                    <img src="./assets/CLI.PNG" alt="Project 2" width="100%" />
+                </div>
+                <div class="project-description">
+                    <h3>Terminal Portfolio Website</h3>
+                    <p>The terminal version of this site, with working command autofill and history.</p>
+                    <button class="btn btn-color-1"
+                        onclick="window.open('https://github.com/royanirudd/PortfolioTerminalWebsite')">View on
+                        GitHub</button>
+                </div>
+            </div>
+            <div class="project-article">
+                <div class="project-image">
+                    <img src="./assets/news.PNG" alt="Project 3" width="100%" />
+                </div>
+                <div class="project-description">
+                    <h3>Blazor news site</h3>
+                    <p>Blazor app that uses a news API to dynamically obtain and render different categories of news
+                        sites.</p>
+                    <button class="btn btn-color-1"
+                        onclick="window.open('https://github.com/royanirudd/news-site-blazor')">View on
+                        GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img class="icon contact-icon" src="./assets/email.png" alt="Email icon">
+                <p><a href="mailto:aniruddroy704@gmail.com">aniruddroy704@gmail</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img class="icon contact-icon" src="./assets/linkedin.png" alt="Linkedin icon">
+                <p><a href="https://www.linkedin.com/in/anirudh-roy1/">LinkedIn</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="CLI">
+        <p class="section_text_p1">Check Out The</p>
+        <h1 class="title">CLI Version</h1>
+        <button class="btn btn-color-2" href="indexCLI.html">View</button>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tech-stack">Tools</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="indexCLI.html">CLI</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>© 2023 Anirudh Roy. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptGUI.js"></script>
+</body>
+
+</html>

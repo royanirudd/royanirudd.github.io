@@ -1,0 +1,475 @@
+/* General styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+p {
+	color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a,
+.btn {
+	transition: all 0.3s ease;
+}
+
+/* Desktop navbar */
+
+nav,
+.nav-links {
+	display: flex;
+}
+
+nav {
+	justify-content: space-around;
+	align-items: center;
+	height: 17vh;
+}
+
+.nav-links {
+	gap: 2rem;
+	list-style: none;
+	font-size: 1.5rem;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	text-decoration-color: white;
+}
+
+a:hover {
+	color: grey;
+	text-decoration: underline;
+	text-decoration-color: grey;
+	text-underline-offset: 1rem;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.logo:hover {
+	cursor: default;
+}
+
+/* Hamburger menu */
+
+#hamburger-nav {
+	position: relative;
+	display: none;
+	padding-bottom: 0;
+}
+
+.hamburger-menu {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.hamburger-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.hamburger-icon span {
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	right: 15%;
+	width: fit-content;
+	max-height: 0;
+	background-color: white;
+	overflow: hidden;
+	transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+	transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+	list-style: none;
+}
+
+.menu-links.open {
+	max-height: 300px;
+	opacity: 1;
+	visibility: visible;
+	display: block;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+	transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+	transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:nth-child(1) {
+	transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+	opacity: 1;
+}
+
+.hamburger-icon span:nth-child(3) {
+	transform: none;
+}
+
+/* Section */
+
+section {
+	padding-top: 4vh;
+	height: 96vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
+
+.section-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* profile */
+#profile {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	height: 80vh;
+}
+
+.section_pic-container-1 img {
+	display: flex;
+	height: 400px;
+	width: 350px;
+	margin: auto 0px;
+	border-radius: 50%;
+}
+
+.section_text-container {
+	align-self: center;
+	text-align: center;
+}
+
+.section_text-container p {
+	font-weight: 600;
+}
+
+.section_text_p1 {
+	text-align: center;
+}
+
+.section_text_p2 {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+}
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#socials-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+/* icons */
+
+.icon {
+	cursor: pointer;
+	height: 2rem;
+}
+
+/* buttons */
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.btn {
+	font-weight: 600;
+	transition: all 0.3s ease;
+	padding: 1rem;
+	width: 8rem;
+	border-radius: 2rem;
+}
+
+.btn-color-1 {
+	background: black;
+	color: white;
+}
+
+.btn-color-2 {
+	background: white;
+	color: black;
+	border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+	background: white;
+	color: black;
+}
+
+.btn-color-2:hover {
+	background: black;
+	color: white;
+}
+
+
+.btn-container {
+	gap: 1rem;
+}
+
+
+/* About section */
+
+#about {
+	position: relative;
+}
+
+.about-containers {
+	gap: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.about-details-container {
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+	display: flex;
+}
+
+.about-pic {
+	border-radius: 2rem;
+}
+
+.arrow {
+	padding-top: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 95%;
+}
+
+.details-container {
+	padding: 1.5rem;
+	flex: 1;
+	background: white;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rbg(163, 163, 163);
+	text-align: center;
+}
+
+.section-container {
+	gap: 4rem;
+	height: 80%;
+}
+
+.section_pic-container-2 img {
+	display: flex;
+	height: 400px;
+	width: 400px;
+	margin: auto 0;
+}
+
+
+/* Experience section */
+
+#tech-stack {
+	padding: 2vh 5rem;
+	/* Adjusted padding for smaller container */
+	background-color: white;
+	/* Optional: Maintain background */
+	border-radius: 2rem;
+	/* Matches other section styles */
+	border: rgb(53, 53, 53) 0.1rem solid;
+	/* Matches border styling */
+	max-width: 1200px;
+	/* Set max width for the container */
+	height: fit-content;
+	margin: auto;
+	/* Center the container */
+}
+
+.tech-stack-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* Allows boxes to wrap */
+	gap: 1rem;
+	/* Reduced gap between boxes */
+	justify-content: center;
+	/* Center align boxes */
+}
+
+
+.tech-category {
+	flex: 1 1 200px;
+	/* Flex growth and shrinkage with a minimum width */
+	padding: 1rem;
+	/* Padding for internal spacing */
+	text-align: center;
+	/* Center align text and icons */
+	background: rgba(255, 255, 255, 0.9);
+	/* Optional: Add slight background */
+	border: 1px solid rgb(230, 230, 230);
+	/* Box border */
+	border-radius: 1rem;
+	/* Rounded corners */
+}
+
+.tech-icons {
+	display: flex;
+	flex-wrap: wrap;
+	/* Wrap icons */
+	justify-content: center;
+	/* Center align icons */
+	gap: 1rem;
+	/* Space between icons */
+}
+
+.tech-icons img {
+	height: 40px;
+	/* Adjust icon size */
+	width: auto;
+	/* Maintain aspect ratio */
+}
+
+
+/* Projects */
+
+#projects {
+	padding: 4vh 10rem;
+	/* Adjust padding as needed */
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	/* Stacking articles vertically */
+	gap: 2rem;
+	/* Space between articles */
+}
+
+.project-article {
+	display: flex;
+	background: white;
+	/* Background for articles */
+	border-radius: 2rem;
+	/* Matching rounded corners */
+	border: rgb(53, 53, 53) 0.1rem solid;
+	/* Border styling */
+	padding: 1.5rem;
+	/* Padding inside articles */
+}
+
+.project-image {
+	flex: 1;
+	/* Allow image container to grow */
+	margin-right: 1rem;
+	/* Space between image and description */
+}
+
+.project-description {
+	flex: 2;
+	/* Allow description container to grow */
+}
+
+.project-description h3 {
+	font-size: 1.5rem;
+	/* Adjust title size */
+	margin-bottom: 0.5rem;
+	/* Space below title */
+}
+
+.project-description p {
+	margin-bottom: 1rem;
+	/* Space below description */
+}
+
+/* contact */
+#contact {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+}
+
+.contact-info-upper-container {
+	display: flex;
+	justify-content: center;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rbg(250, 250, 250);
+	margin: 2rem auto;
+	padding: 0.5rem;
+}
+
+.contact-info-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1rem;
+}
+
+.contact-info-container p {
+	font-size: larger;
+}
+
+.contact-icon {
+	cursor: default;
+	height: 2rem;
+}
