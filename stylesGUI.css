@@ -473,3 +473,19 @@ section {
 	cursor: default;
 	height: 2rem;
 }
+
+/*CLI link*/
+
+#CLI {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+#CLI .btn {
+	margin-top: 1rem;
+	text-decoration: none;
+}
