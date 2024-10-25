@@ -1,63 +1,38 @@
-// Theme toggle functionality
-const themeSwitch = document.getElementById('themeSwitch');
-const body = document.body;
-
-// Modal functionality
-const modal5 = document.getElementById("modal-5");
-const modal8 = document.getElementById("modal-8");
-const item5 = document.getElementById("item-5");
-const item8 = document.getElementById("item-8");
-const closeButtons = document.getElementsByClassName("close");
+function toggleMenu() {
+	const menu = document.querySelector(".menu-links");
+	const icon = document.querySelector(".hamburger-icon");
+	menu.classList.toggle("open");
+	icon.classList.toggle("open");
+}
 
 
-themeSwitch.addEventListener('change', () => {
-    if (themeSwitch.checked) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-    } else {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-    }
-});
 
-// Change border color of social buttons
-function changeBorderColor(color) {
-    const buttons = document.querySelectorAll('.item-1 .social-button');
+async function fetchGitHubProjects() {
+const username = 'royanirudd'; 
+const url = `https://api.github.com/users/${username}/repos?sort=created&per_page=6`;
 
-    buttons.forEach(button => {
-        button.style.borderColor = color;
+try {
+    const response = await fetch(url);
+    const repos = await response.json();
+
+    const projects = document.querySelectorAll('.project-article');
+
+    repos.forEach((repo, index) => {
+	if (index < projects.length) {
+	    const descriptionElement = projects[index].querySelector('.project-description p');
+	    const buttonElement = projects[index].querySelector('.project-description button');
+
+	    descriptionElement.textContent = repo.description || 'No description available';
+	    buttonElement.onclick = () => window.open(repo.html_url, '_blank');
+	}
     });
+} catch (error) {
+    console.error('Error fetching GitHub projects:', error);
+}
 }
 
-// Toggle dark/light mode
-function toggleMode() {
-    body.classList.toggle('light-mode');
-    body.classList.toggle('dark-mode');
-}
+// Call the function when the document is fully loaded
+//document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
 
-// Update visibility of mobile-only elements
-function updateContentSmall() {
-    const mobNoneElements = document.querySelectorAll('.item-3 .mob-none');
-    const displayStyle = window.innerWidth <= 900 ? 'none' : 'list-item';
-    mobNoneElements.forEach(element => {
-        element.style.display = displayStyle;
-    });
-}
 
-// Update project list visibility based on screen size
-function updateContentMedium() {
-    const list = document.getElementById('projectList');
-    if (list) {
-        list.style.display = window.innerWidth <= 1200 ? 'none' : 'block';
-    }
-}
 
-// Run on page load
-updateContentMedium();
-updateContentSmall();
-
-// Run on window resize
-window.addEventListener('resize', () => {
-    updateContentMedium();
-    updateContentSmall();
-});

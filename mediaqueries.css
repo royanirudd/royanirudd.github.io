@@ -1,0 +1,196 @@
+@media screen and (max-width: 1400px) {
+	#profile {
+		height: 83vh;
+		margin-bottom: 6rem;
+	}
+
+	.about-containers {
+		flex-wrap: wrap;
+	}
+
+	.projects-container {
+		gap: 1.5rem;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	#desktop-nav {
+		display: none;
+	}
+
+	#hamburger-nav {
+		display: flex;
+	}
+
+	#tech-stack,
+	.tech-stack-container {
+		margin-top: 2rem;
+	}
+
+	#profile,
+	.section-container {
+		display: block;
+	}
+
+	section,
+	.section-container {
+		height: fit-content;
+	}
+
+	section {
+		margin: 0 5%;
+	}
+
+
+	.about-containers {
+		margin-top: 0;
+		flex-wrap: wrap;
+	}
+
+	.projects-container {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.section_pic-container-1,
+	.section_pic-container-2 {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project-image {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	#profile {
+		height: auto;
+		margin-bottom: 4rem;
+	}
+
+	.about-containers {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section_pic-container-1,
+	.section_pic-container-2 {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project-article {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.project-image {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+
+	#contact,
+	footer {
+		height: auto;
+	}
+
+	#profile {
+		height: auto;
+		margin-bottom: 2rem;
+	}
+
+	article {
+		font-size: 1rem;
+	}
+
+	footer nav {
+		height: fit-content;
+		margin-bottom: 2rem;
+	}
+
+	.about-containers,
+	.contact-info-upper-container,
+	.btn-container {
+		flex-wrap: wrap;
+	}
+
+	.contact-info-container {
+		margin: 0;
+	}
+
+	.contact-info-container p,
+	.nav-links li a {
+		font-size: 1rem;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		gap: 0.5rem;
+		text-align: center;
+	}
+
+	.section_pic-container-1,
+	.section_pic-container-2 {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.section_text_p2 {
+		font-size: 1.25rem;
+	}
+
+	.title {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.projects-container {
+		gap: 1rem;
+	}
+
+	.project-article {
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.project-image {
+		margin-bottom: 1rem;
+		width: 100%;
+		display: none;
+	}
+
+	.text-container {
+		text-align: justify;
+		font-size: 1rem;
+	}
+}
